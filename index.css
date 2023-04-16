@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family:'Bitter', serif !important;
+}
+
+nav{
+	background-color: rgb(12,51,69)  !important;
+
+}
+/* landing page design start */
+/* rgb(201, 163, 105) */
+
+.profile-img-nav{
+	border-radius: 250px;
+}
+
+.profile-img-land{
+	border-radius: 250px;
+}
+
+.img-land, .arrow-down{
+	margin-top:100px;
+	padding-top: 20px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#landing {
+  height: 100vh;
+  background-color: rgb(12,51,69) !important;
+  margin-bottom: 2px;
+}
+
+/* animation for landing page start */
+.profile-img-land{
+	border-radius: 250px;
+	animation: 2s linear 0s sun-rise;
+}
+
+@keyframes sun-rise {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: translateY(110vh);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateY(0);
+  }
+}
+
+.typing-1{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.typing-1 h1:nth-child(1) {
+  color: #355c7d;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40,end) forwards;
+  animation-delay: 3s;
+}
+
+.typing-1 h1:nth-child(2) {
+  opacity: 0;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #C9A369, #e4d1b4, #967036);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 360px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* animation for landing page end */
+
+/* landing page design end */
+
+
+/* projects page design start */
+
+
+#projects{
+  min-height: 100vh;
+  background-color: rgb(201, 163, 105) !important;
+  margin-bottom: 2px;
+}
+	.title-proj{
+		padding-top:3em;
+		font-color:rgb(12,51,69);
+		font-weight: 1200px;
+	}
+
+	.hr-proj{
+		background:rgb(12,51,69);
+		position:relative;
+		height:12px;
+		width:20%;
+
+	}
+
+	.cards{
+		padding-top: 3em;
+		padding-bottom: 2em;
+	}
+	.content{
+		
+		position: relative;
+		width: 90%;
+		max-width: 400px;
+		margin: auto;
+		overflow: hidden
+	}
+	.content .content-overlay{
+		background: rgba(0,0,0,0.7);
+		position: absolute;
+		height: 99%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		opacity: 0;
+		-webkit-transition: all 0.4s ease-in-out 0s;
+		-moz-transition: all 0.4s ease-in-out 0s;
+		transition: all 0.4s ease-in-out 0s
+	}
+	.content:hover 
+	.content-overlay{
+		opacity: 1
+	}
+	.content-image{
+		width: 100%	
+	}
+img{
+	box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+}
+
+	.content-details{
+		position: absolute;
+		text-align: center;
+		padding-left: 1em;
+		padding-right: 1em;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		opacity: 0;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		-moz-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s
+	}
+	.content:hover 
+	.content-details{
+		top: 50%;
+		left: 50%;
+		opacity: 1
+	}
+
+	.content-details h3{
+		color: #fff;
+		font-weight: 500;
+		letter-spacing: 0.15em;
+		margin-bottom: 0.5em;
+		text-transform: uppercase
+	}
+	.content-details p{
+		color: #fff;
+		font-size: 1em
+	}
+	.fadeIn-bottom{
+		top: 80%
+	}
+
+	.button-proj{
+	border-radius: 250px;
+	padding:8px;
+	background-color: rgb(12,51,69);
+	color:white;
+	font-size: 20px;
+	}
+
+/* projects page design end */
+
+/* tools page design start */
+#tools{
+  min-height: 100vh;
+  background-color: rgb(12,51,69) !important;
+}
+
+.title-tools{
+	padding-top:3em;
+	padding-bottom: 2em;
+	text-size:100px;
+	text-align: center;
+	color:white;
+}
+
+/* tools page design end */
+
+/* contact form */
+#contact{
+  min-height: 100vh;
+  background-color: rgb(201, 163, 105) !important;
+}
+
+footer{
+	background-color: rgb(201, 163, 105) !important;
+  }
