@@ -133,22 +133,40 @@ nav{
 /* landing page design end */
 
 
+/*about me start*/
+#about-me{
+  min-height: 100vh;
+  width:100vw;
+  background-color: rgb(201, 163, 105) !important;
+  margin-bottom: 2px;
+}
+
+/*.profile-img-about{
+	margin-top: 150px;
+}
+
+.caption{
+	margin-top: 12rem;
+}*/
+/*about me end*/
+
+
 /* projects page design start */
 
 
 #projects{
   min-height: 100vh;
-  background-color: rgb(201, 163, 105) !important;
+  background-color: rgb(12,51,69) !important;
   margin-bottom: 2px;
 }
 	.title-proj{
 		padding-top:3em;
-		font-color:rgb(12,51,69);
+		color:rgb(201, 163, 105) !important;
 		font-weight: 1200px;
 	}
 
 	.hr-proj{
-		background:rgb(12,51,69);
+		background:rgb(201, 163, 105);
 		position:relative;
 		height:12px;
 		width:20%;
@@ -188,7 +206,7 @@ nav{
 	.content-image{
 		width: 100%	
 	}
-img{
+.projects img{
 	box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.1);
 	border-radius: 25px;
 }
@@ -234,8 +252,8 @@ img{
 	.button-proj{
 	border-radius: 250px;
 	padding:8px;
-	background-color: rgb(12,51,69);
-	color:white;
+	background-color: rgb(201, 163, 105);
+	color:rgb(12,51,69);
 	font-size: 20px;
 	}
 
@@ -244,7 +262,7 @@ img{
 /* tools page design start */
 #tools{
   min-height: 100vh;
-  background-color: rgb(12,51,69) !important;
+  background-color: rgb(201, 163, 105) !important;
   margin-bottom: 2px;
 }
 
@@ -256,12 +274,18 @@ img{
 	color:white;
 }
 
+
+
 /* tools page design end */
 
 /* contact form */
 #contact{
   min-height: 100vh;
-  background-color: rgb(201, 163, 105) !important;
+  background-color: rgb(12,51,69) !important;
+}
+
+.button-contact{
+	background-color:rgb(201, 163, 105);
 }
 
 footer{
