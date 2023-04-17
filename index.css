@@ -245,6 +245,7 @@ img{
 #tools{
   min-height: 100vh;
   background-color: rgb(12,51,69) !important;
+  margin-bottom: 2px;
 }
 
 .title-tools{
